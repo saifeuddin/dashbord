@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b97cd1;
+    font-family: 'Open Sans', sans-serif;
+
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 5%;
+    width:700px;
+    max-width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    overflow: hidden;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.container .header {
+    background-color: #FA6638;
+    color: #FDFDFD;
+    padding: 5%;
+    font-size: 26px;
+}
+
+.container .header h2{
+    text-align: center;
+    margin: 0;
+}
+
+
+.form{
+    padding: 7%;
+}
+
+
+.form .form-control {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+.form .form-control label {
+    font-weight: 600;
+    font-size: 25px;
+    font-family: 'Tinos', serif;
+
+    margin-bottom: 2%;
+    display: inline-block;
+}
+
+
+.form .form-control input{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #e4d8d8;
+    font-family: inherit;
+    font-size: 20px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.form .form-control input:focus{
+    outline: none;
+    border: 2px solid #777;
+}
+
+.form .form-control.success input{
+    border: 2px solid #2ecc71;
+}
+
+.form .form-control.error input{
+    border: 2px solid #ff1900;
+}
+
+
+.form-control i {
+    font-size: 25px;
+    visibility: hidden;
+    position: absolute;
+    top: 64px;
+    right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #5900ff;
+    visibility: visible;
+}
+
+
+.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small {
+    font-size: 19px;
+    color: #e03623;
+    position: absolute;
+    bottom: -25%;
+    left: 1%;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    background-color: #8e44ad;
+    border: 2px solid #8e44ad;
+    color: #fff;
+    font-family: inherit;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+
+    font-family: 'Tinos', serif;
+}
+
+
+.form button:hover{
+    background-color: #6e3a85;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 550px) {
+
+    .container {
+        margin: 20% 1%;
+    }
+
+    .container .header {
+        font-size: 22px;
+    }
+
+
+    .form-control i {
+        font-size: 20px;
+        top: 54px;
+        right: 10px;
+    }
+
+    .form .form-control label {
+        font-size: 20px;
+    }
+
+    .form .form-control input {
+        font-size: 18px;
+    }
+    
+    
+    .form-control small {
+        font-size: 17px;
+    }
+
+    .form button {
+        font-size: 20px;
+    }
+}

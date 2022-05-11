@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+    /* font-weight: 500; */
+    /* font-family: 'Roboto', sans-serif; */
+        /* font-family: 'Kalpurush', sans-serif; */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+/* 
+    --------------------------------------------------
+*/
+
+
+
+/* ================== */
+header {
+    padding: 3%;
+    background-color: rgb(167, 208, 243);
+}
+
+.profile_header {
+    border-radius: 5px;
+    background-color: #FA6638;
+}
+
+.profile_header_container {
+    padding: 0px;
+}
+
+.profile_header .row {
+    padding: 0px;
+}
+
+.profile_header .main_text {
+    padding: 6%;
+    font-size: 40px;
+    
+    text-align: center;
+    color: #FDFDFD;
+    font-weight: 500;   
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+/* =========== */
+main {
+    padding: 5% 1%;
+    background-color: rgb(167, 208, 243);
+}
+
+main .profile_body {
+    padding: 0;
+}
+
+main .profile_boody_container {
+    padding: 0;
+}
+
+
+
+
+/* ========== */
+main .img_row {
+    padding: 0;
+}
+
+main .p_pic {
+    padding: 0;
+}
+
+main form {
+    border-radius: 5px;
+}
+
+main form div {
+    width: 320px;
+    height: 320px;
+
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: 0 auto;
+    position: relative;
+    transition: all .7s linear;
+
+    box-shadow: 3px 1px 1px rgb(0, 0, 0),
+                -3px -1px 1px rgb(0, 0, 0);
+}
+
+main form img,
+main form p {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+main form img {
+    object-fit: contain;
+}
+
+main form p {
+    font-size: 25px;
+    font-family: 'Tinos', serif;
+
+    color: #FDFDFD;
+    background-color: rgb(39, 54, 143);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+main form div:hover p {
+    visibility: visible;
+}
+
+main form input {
+    display: none;
+}
+
+
+
+
+/* ============ */
+main .content_row {
+    padding-block: 2% 10%;
+}
+
+main .content_row .row{
+    width: 55%;
+    margin: 2% auto;
+    padding: 2% 0 2% 10%;
+    
+    border-radius: 10px 10px 10px 55px;
+    background-color: rgb(181, 218, 250);
+    box-shadow: 1px 5px 5px 0px rgb(0, 0, 0);
+
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+main .content_row .row p {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Kalpurush', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 1400px) {
+
+/* =============== */
+    .profile_header .main_text {
+        padding: 7%;
+    }
+
+
+/* =============== */
+    main form div {
+        width: 300px;
+        height: 300px;
+    }
+
+
+/* =============== */
+    main .content_row .row {
+        width: 65%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 1150px) {
+
+    /* =============== */
+        main .content_row .row {
+            width: 70%;
+            margin: 3% auto;
+        }
+
+        main .content_row .row p {
+            font-size: 28px;
+            font-weight: 600;
+            font-family: 'Kalpurush', sans-serif;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 1000px) {
+
+/* =============== */
+    .profile_header .main_text {
+        padding: 9%;
+    }
+
+
+/* =============== */
+        main .content_row .row {
+            width: 70%;
+            padding: 3% 0 3% 10%;
+        }
+
+        main .content_row .row p {
+            font-size: 26px;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 860px) {
+
+/* =============== */
+        main form div {
+            width: 280px;
+            height: 280px;
+        }
+
+/* =============== */
+        main .content_row .row {
+            width: 75%;
+            margin: 4% auto;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 800px) {
+
+/* =============== */
+    .profile_header .main_text {
+        padding: 11%;
+        font-size: 35px;
+    }
+
+
+/* =============== */
+        main .content_row .row {
+            margin: 5% auto;
+        }
+
+        main .content_row .row p {
+            font-size: 23px;
+        }
+}
+
+
+
+
+
+
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 700px) {
+
+    /* =============== */
+        main .content_row .row {
+            width: 85%;
+        }
+}
+
+
+
+
+
+
+
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 650px) {
+
+/* =============== */
+    .profile_header .main_text {
+        padding: 13%;
+    }
+
+/* =============== */
+        main form div {
+            width: 250px;
+            height: 250px;
+        }
+
+/* =============== */
+        main .content_row .row {
+            width: 90%;
+        }
+}
+    
+
+
+
+    
+    
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 570px) {
+
+    /* =============== */
+    .profile_header .main_text {
+        padding: 16%;
+        font-size: 30px;
+    }
+
+    /* =============== */
+        main .content_row .row {
+            width: 95%;
+            padding: 5% 0 5% 5%;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 510px) {
+
+/* ================== */
+    header {
+        padding: 3%;
+    }
+
+    /* =============== */
+        main .content_row .row {
+            width: 97%;
+        }
+
+        main .content_row .row p {
+            font-size: 20px;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 450px) {
+    
+/* ================== */
+    header {
+        padding: 1%;
+    }
+
+
+/* =============== */
+    .profile_header .main_text {
+        padding: 20%;
+    }
+
+
+/* =============== */
+    main form div {
+        width: 220px;
+        height: 220px;
+    }
+
+
+/* =============== */
+        main .content_row .row {
+            width: 98%;
+            padding: 6% 0 6% 7%;
+        }
+
+        main .content_row .row p {
+            font-size: 18px;
+        }
+}
+
+
+
+
+
+    
+    
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 395px) {
+
+/* =============== */
+    main form div {
+        width: 180px;
+        height: 180px;
+    }
+
+
+    /* =============== */
+        main .content_row .row {
+            width: 98%;
+            padding: 7% 0 7% 7%;
+        }
+
+        main .content_row .row p {
+            font-size: 16px;
+        }
+}
+
+
+
+
+
+
+    
+    
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 355px) {
+
+
+    /* =============== */
+        main .content_row .row {
+            width: 99%;
+            padding: 7% 0 7% 6%;
+        }
+
+        main .content_row .row p {
+            font-size: 14px;
+        }
+}
+
+
+
+
+
+    
+    
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 305px) {
+
+/* =============== */
+    main form div {
+        width: 150px;
+        height: 150px;
+    }
+
+
+    /* =============== */
+        main .content_row .row {
+            width: 99%;
+            padding: 7% 0 7% 6%;
+        }
+
+        main .content_row .row p {
+            font-size: 13px;
+        }
+}
+

@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+body {
+    position: relative;
+}
+
+
+
+/* ----------------------------- */
+    .header {
+        padding: 1px;
+        background-color: #FA6638;
+    }
+
+    .header .container {
+        padding: 1px;
+    }
+
+    .header .row {
+        padding: 40px;
+    }
+
+    .header .col{
+        color: #fff;
+        font-size: 28px;
+        font-weight: 500;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+/* --------------- */
+    .cashout {
+        margin-bottom: 100px;
+        padding: 1px;
+    }
+
+    .cashout .container {
+        padding: 1px;
+        margin-bottom: 20px;
+    }
+    
+    .cashout .container .row{
+        padding: 30px 0px 0px 0px;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .cashout .container .row h4{
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+
+    form label, form input {
+        font-size: 20px;
+    }
+    form label {
+        display: inline-block;
+        margin: 0px 30px 0px 0px;
+    }
+    form label:last-of-type {
+        margin: 0px 30px 0px 20px;
+    }
+
+    form input {
+        text-indent: 10px;
+        outline: none;
+        width: 250px;
+        height: 40px;
+        color: rgb(131, 102, 102);
+    }
+
+
+
+    /* ------------------------------- */
+    .cashout .payment {
+        margin-top: 100px;
+    }
+
+
+    .payment .payment_middle {
+        width: 79%;
+        margin: 0 auto;
+    }
+
+    .payment_middle .container2 {
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    
+    .payment_middle .container2 .row {
+        margin-bottom: 20px;
+        border-radius: 3px;
+        box-shadow: 0px 0px 1px 1px rgb(223, 218, 218);
+    }
+    .payment_middle .container2 .row:first-of-type {
+        font-size: 20px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .payment_middle .row:hover:not(:first-of-type) {
+        background-color: rgb(217, 241, 168);
+        cursor: pointer;
+    }
+    
+    .payment_middle .transition {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+
+        padding: 15px;
+        transition: all .5s ease;
+    }
+
+
+    .transition .col {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .transition .col p {
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .transition .col p span {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .transition .col:last-of-type p {
+        font-weight: 500;
+        font-size: 20px;
+        color: red;
+    }
+
+    .transition .col:nth-child(3) p{
+        font-size: 19px;
+        font-weight: 500;
+    }
+
+    .transition .col .p_method {
+        display: flex;
+        align-items: center;
+    }
+
+    .transition .col h3 {
+        color: #07A107;
+    }
+
+    .p_method span {
+        display: inline-block;
+    }
+
+    .p_method span img {
+        width: 100%;
+        transform: scale(.5);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    -----------------------------
+ */
+@media only screen and (max-width: 1105px) {
+    /* ------------------------------- */
+    
+    .payment .payment_middle {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    -----------------------------
+ */
+@media only screen and (max-width: 1027px) {
+    /* ------------------------------- */
+    .row .transition .col:first-of-type p{
+        line-height: 2;
+        text-align: center;
+    }
+    .payment .payment_middle {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    -----------------------------
+ */
+@media only screen and (max-width: 926px) {
+
+
+/* ---------- */
+    form input {
+        width: 200px;
+        height: 40px;
+        color: rgb(131, 102, 102);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    -----------------------------
+ */
+@media only screen and (max-width: 926px) {
+
+/* ---------- */
+    form input {
+        width: 150px;
+        height: 40px;
+        color: rgb(131, 102, 102);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    -----------------------------
+ */
+@media only screen and (max-width: 659px) {
+
+/* ---------- */
+    form input {
+        width: 130px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    -----------------------------
+ */
+@media only screen and (max-width: 605px) {
+
+/* ---------- */
+
+    .cashout .container .row{
+        padding: 45px 0px 0px 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    form input {
+        text-indent: 5px;
+        width: 150px;
+    }
+
+
+
+    .payment_middle .transition {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+/* 
+    -----------------------------
+ */
+@media only screen and (max-width: 500px) {
+
+    /* ------------ */
+    .cashout .payment {
+        margin-top: 80px;
+    }
+
+    .cashout .container .row {
+        padding: 30px 0px 0px 20px;
+        width: 95%;
+    }
+
+
+    .cashout .container .row:last-of-type {
+        text-indent: 5px;
+    }
+
+
+    form label {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    form label:last-of-type {
+        margin: 0px 30px 0px 25px;
+    }
+    
+    form input {
+        font-size: 16px;
+        width: 150px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    -----------------------------
+ */
+@media only screen and (max-width: 426px) {
+
+/* ------------ */ 
+
+    .cashout .container .row:last-of-type {
+        text-indent: 0px;
+    }
+
+    form label {
+        margin: 0px;
+        display: block;
+    }
+
+    form label:last-of-type {
+        border: 1x solid #000;
+        position: relative;
+        left: -25px;
+    }
+
+    form label,
+    form input {
+        font-size: 15px;
+    }
+
+
+    form input {
+        height: 35px;
+        margin: 10px;
+    }
+
+
+
+    /* ------------------------------- */
+    .cashout .payment {
+        margin-top: 50px;
+    }
+
+    .payment .payment_middle {
+        width: 97%;
+    }
+
+    .payment_middle .container2 .row:first-of-type {
+        font-size: 15px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+
+    .transition .col p {
+        font-size: 12px;
+    }
+    
+    .transition .col:last-of-type h3 {
+        font-size: 15px;
+    }
+    .transition .col:nth-child(3) p {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* 
+    -----------------------------
+ */
+@media only screen and (max-width: 378px) {
+
+/* ------------ */ 
+    .cashout .container .row:last-of-type {
+    text-indent: 0px;
+    }
+    
+
+    form label,
+    form input {
+        font-size: 15px;
+    }
+
+    form label:last-of-type {
+        margin: 0px 0px 10px 20px;
+    }
+
+    form input {
+        height: 35px;
+    }
+
+    form input:last-of-type {
+        margin: 0px 0px 0px 10px;
+    }
+
+
+    /* ------------------------------- */
+    .cashout .payment {
+        margin-top: 50px;
+    }
+
+    .payment .payment_middle {
+        width: 97%;
+    }
+
+    .payment_middle .container2 .row:first-of-type {
+        font-size: 15px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    
+    .payment_middle .transition {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+
+    .transition .col p {
+        font-size: 12px;
+    }
+    
+    .transition .col:last-of-type h3 {
+        font-size: 15px;
+    }
+    .transition .col:nth-child(3) p {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    -----------------------------
+ */
+@media only screen and (max-width: 321px) {
+
+
+/* ------------ */
+    .cashout .container .row:last-of-type {
+        text-indent: 0px;
+    }
+
+    form label {
+        margin: 0px 0px 0px 0px;
+    }
+    form label, form input {
+        font-size: 15px;
+    }
+    form label:last-of-type {
+        margin: 26px 0px 0px 0px;
+        position: relative;
+        left: 1px;
+    }
+
+    form input{
+        height: 35px;
+    }
+
+    form input:last-of-type {
+        margin: 0px 0px 0px 20px;
+    }
+
+
+
+
+    /* ------------------------------- */
+
+    .payment .payment_middle {
+        width: 99%;
+    }
+
+    .transition .col:last-of-type h3 {
+        font-size: 12px;
+    }
+    .transition .col:nth-child(3) p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title> Refer List Page </title>
+
+    <link rel="stylesheet" href="./css/myProfile.css">
+
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!--------------------------- Profile Header ---------------------->
+    <header>
+        <div class="profile_header">
+            <div class="profile_header_container">
+                <div class="row">
+                    <div class="main_text">
+                        <p>
+                            My Profile
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    
+    
+    
+    <!--------------------------- Profile Body ---------------------->
+    <main>
+        <div class="profile_body">
+            <div class="profile_boody_container">
+
+                <div class="img_row">
+                    <div class="p_pic">
+                        <form action="#" method="post">
+                            <div>
+                                <img src="https://iconape.com/wp-content/png_logo_vector/avatar.png" id="pp"  alt="Profile Pic">
+                                <p id="chnage">
+                                    Change Picture
+                                </p>
+                                <input type="file" id="uploder" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="content_row">
+                    <div class="row">
+                        <p>
+                            নাম
+                        </p>
+                        <p>:</p>
+                        <p>
+                            মনির হোসেন
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p>
+                            আইডি নং
+                        </p>
+                        <p>:</p>
+                        <p>
+                            ১২৩৪৫৬৮৯৮৮৮৮৮
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p>
+                            মোবাইল
+                        </p>
+                        <p>:</p>
+                        <p>
+                            ১২৩৪৫৬৮৯৮৮৮৮৮
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p>
+                            ইমেইল
+                        </p>
+                        <p>:</p>
+                        <p>
+                            ১২৩৪৫৬৮৯৮৮৮৮৮
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p>
+                            জয়েন ডেট
+                        </p>
+                        <p>:</p>
+                        <p>
+                            ১২-১২-২০২১
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <script defer>
+        let coverPreview = document.getElementById('pp')
+        let change = document.getElementById('chnage')
+        let cover = document.getElementById('uploder')
+
+        change.addEventListener('click', _ => cover.click())
+
+        cover.addEventListener("change", event => {
+            let file = cover.files[0]
+            let reader = new FileReader()
+
+            reader.onload = function () {
+                coverPreview.src = reader.result
+            }
+
+            reader.readAsDataURL(file)
+        })
+    </script>
+</body>
+</html>

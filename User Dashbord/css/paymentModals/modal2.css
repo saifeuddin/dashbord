@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+/* ========================== */
+.modal-main {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.modal-main > div{
+    height: 100%;
+    position: relative;
+}
+
+.modal-main > div > div{
+    position: absolute;
+    top: 28%;
+    left: 33%;
+    padding: 1%;
+    width: 36%;
+    height: 58%;
+    border-radius: 5px;
+    background-color: #FDFDFD;
+    box-shadow: -1px -1px 1px 0px rgb(248, 187, 187), 1px 1px 1px 0px rgb(248, 201, 201);
+}
+
+.modal-main > div > div .close {
+    padding: 0px;
+}
+
+.modal-main > div > div .close i{
+    float: right;
+    color: #333333;
+    font-size: 35px;
+}
+
+.modal-main > div > div .close i:hover {
+    color: #e71414;
+}
+
+
+
+.modal-main .modal-title {
+    color: #333333;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.modal-main .listDiv {
+    height: 40%;
+    width: 90%;
+    margin: 0% auto;
+}
+
+.modal-main .listDiv h2{
+    margin-top: 2%;
+    color: rgb(25, 150, 25);
+}
+
+
+.modal-main .listDiv .list {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.modal-main .listDiv .list img{
+    border: 1px solid rgb(207, 194, 194);
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.modal-main .listDiv .bank{
+    transform: scale(1.5)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 1550px) {
+    .modal-main>div>div {
+        top: 22%;
+        left: 30%;
+        width: 45%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 1350px) {
+    .modal-main>div>div {
+        top: 22%;
+        left: 30%;
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 1050px) {
+    .modal-main>div>div {
+        left: 20%;
+        width: 64%;
+    }
+}
+
+
+
+
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 900px) {
+    .modal-main>div>div {
+        left: 20%;
+        width: 70%;
+    }
+
+    .modal-main .listDiv .list {
+        width: 85%;
+    }
+}
+
+
+
+
+
+
+
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 800px) {
+    .modal-main>div>div {
+        left: 12%;
+        width: 74%;
+    }
+}
+
+
+
+
+
+
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 700px) {
+    .modal-main>div>div {
+        left: 12%;
+        width: 80%;
+    }
+
+
+    .modal-main .listDiv .list {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 650px) {
+    .modal-main>div>div {
+        left: 5%;
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* 
+    ------------------------------------
+ */
+@media only screen and (max-width: 550px) {
+    .modal-main>div>div {
+        left: 0%;
+        width: 100%;
+    }
+
+
+    .modal-main .modal-title {
+        margin-bottom: 5%;
+        font-size: 25px;
+    }
+
+    .modal-main .listDiv .list {
+        width: 100%;
+    }
+
+    .modal-main .listDiv .bank {
+        transform: scale(1.2)
+    }
+
+}

@@ -1,0 +1,713 @@
+@import url('https://fonts.maateen.me/kalpurush/font.css');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* Tablet Responsive */
+@media screen and (max-width: 769px) {
+
+    .content {
+        padding: 2px;
+        overflow: hidden;
+    }
+
+    .content .profile {
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    .profile > div {
+        padding: 25px;
+        background-color: #fA6638;
+        border-radius: 0px 0px 40px 40px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .profile .profilepic {
+        background-color: aquamarine;
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+
+    .profile .profilepic img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .profile .name {
+        color: white;
+        font-family: 'Kalpurush', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .name h2 {
+        font-size: 25px;
+        font-weight: normal;
+    }
+
+    .name p {
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .profile .balance {
+        font-size: 25px;
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        line-height: 6;
+        text-align: center;
+        background-color: white;
+        font-family: 'Kalpurush', sans-serif;
+    }
+
+
+
+
+
+
+/*  */
+    .main {
+        margin: 30px 0px;
+        padding: 20px 30px;
+    }
+
+    .main .section {
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .main .section .sub {
+        text-align: center;
+        display: flex;
+    }
+
+    .main .section .sub div {
+        padding: 30px 70px 50px 0px;
+    }
+
+    .main .section .sub div a {
+        color: black;
+    }
+
+    .main .section .sub div a img {
+        width: 80px;
+        object-fit: cover;
+    }
+
+    .main .section .sub div a p {
+        margin-top: 15px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: 'Kalpurush', sans-serif;
+    }
+
+
+
+
+
+/*  */
+    .main .bigimage {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .slide-container {
+        position: relative;
+        margin: auto;
+    }
+
+    .myslide {
+        display: none;
+    }
+
+    .myslide img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        display: inline-block;
+        border-radius: 50%;
+        transition: background-color .6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #57431f;
+    }
+
+
+    .fade {
+        animation: fade 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0.4;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+
+
+
+
+
+
+
+/*  */
+    .footer {
+        display: flex;
+        background-color: #FA6638;
+        border-radius: 40px 40px 0px 0px;
+        overflow: hidden;
+    }
+
+
+    .footer div img {
+        margin: 40px 0px 0px 40px;
+        width: 100px;
+    }
+
+    .footer .social {
+        margin-left: 250px;
+        line-height: 3.5;
+        color: white;
+        font-size: 45px;
+        display: flex;
+    }
+
+    .footer .social a {
+        color: rgb(255, 255, 255);
+        margin: 5px;
+    }
+
+    .footer .social i {
+        transition: transform .5s ease;
+    }
+
+    .footer .social i:hover {
+        color: blue;
+        transform: translateY(-5px);
+    }
+
+    .gototop {
+        opacity: 0;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 9999999999;
+        transition: opacity .5s linear;
+    }
+
+
+    .gototop i {
+        font-size: 50px;
+        color: #493819;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Responsive */
+@media screen and (max-width: 425px) {
+
+    .content {
+        overflow: hidden;
+    }
+
+    .content .profile {
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    .profile > div {
+        padding: 20px 0px 10px 0px;
+        background-color: #fA6638;
+        border-radius: 0px 0px 40px 40px;
+    }
+
+    .profile .profilepic {
+        background-color: aquamarine;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+
+    .profile .profilepic img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .profile .name {
+        color: white;
+        font-family: 'Kalpurush', sans-serif;
+    }
+
+    .name h2 {
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    .name p {
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    .profile .balance {
+        font-size: 15px;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        line-height: 6;
+        text-align: center;
+        background-color: white;
+        font-family: 'Kalpurush', sans-serif;
+    }
+
+
+
+
+/*  */
+    .main {
+        margin: 10px 0px;
+        padding: 20px 10px;
+    }
+
+    .main .section {
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .main .section .sub {
+        text-align: center;
+        display: flex;
+    }
+
+    .main .section .sub div {
+        padding: 15px 25px 20px 0px;
+    }
+
+    .main .section .sub div a {
+        color: black;
+    }
+
+    .main .section .sub div a img {
+        width: 40px;
+        object-fit: cover;
+    }
+
+    .main .section .sub div a p {
+        margin-top: 15px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: 'Kalpurush', sans-serif;
+    }
+
+
+
+
+
+    /*  */
+    .main .bigimage {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .slide-container {
+        position: relative;
+        margin: auto;
+    }
+
+    .myslide {
+        display: none;
+    }
+
+    .myslide img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 10px;
+        width: 10px;
+        margin: 0 2px;
+        background-color: #bbb;
+        display: inline-block;
+        border-radius: 50%;
+        transition: background-color .6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #57431f;
+    }
+
+
+    .fade {
+        animation: fade 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0.4;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+
+
+    /*  */
+    .footer {
+        display: flex;
+        background-color: #FA6638;
+        border-radius: 40px 40px 0px 0px;
+        overflow: hidden;
+    }
+
+
+    .footer div img {
+        margin: 30px 0px 0px 30px;
+        width: 60px;
+    }
+
+    .footer .social {
+        margin-left: 90px;
+        line-height: 3.5;
+        color: white;
+        font-size: 30px;
+        display: flex;
+    }
+
+    .footer .social a {
+        color: rgb(255, 255, 255);
+        margin: 5px;
+    }
+
+    .footer .social i {
+        transition: transform .5s ease;
+    }
+
+    .footer .social i:hover {
+        color: blue;
+        transform: translateY(-5px);
+    }
+
+    .gototop {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 9999999999;
+        transition: opacity .5s linear;
+    }
+
+
+    .gototop i {
+        font-size: 30px;
+        color: #493819;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Responsive */
+@media screen and (max-width: 321px) {
+
+    .content {
+        overflow: hidden;
+    }
+
+    .content .profile {
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    .profile > div {
+        padding: 20px 5px 20px 5px;
+        background-color: #fA6638;
+        border-radius: 0px 0px 40px 40px;
+    }
+
+    .profile .profilepic {
+        background-color: aquamarine;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        overflow: hidden;
+    }
+
+    .profile .profilepic img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .profile .name {
+        color: white;
+        font-family: 'Kalpurush', sans-serif;
+    }
+
+    .name h2 {
+        font-size: 13px;
+        font-weight: normal;
+    }
+
+    .name p {
+        font-size: 11px;
+        font-weight: normal;
+    }
+
+    .profile .balance {
+        font-size: 11px;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        line-height: 6;
+        text-align: center;
+        background-color: white;
+        font-family: 'Kalpurush', sans-serif;
+    }
+
+
+
+
+
+
+
+
+
+    /*  */
+    .main {
+        margin: 10px 0px;
+        padding: 20px 15px;
+    }
+
+    .main .section {
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .main .section .sub {
+        text-align: center;
+        display: flex;
+    }
+
+    .main .section .sub div {
+        padding: 15px 25px 20px 0px;
+    }
+
+    .main .section .sub div a {
+        color: black;
+    }
+
+    .main .section .sub div a img {
+        width: 30px;
+        object-fit: cover;
+    }
+
+    .main .section .sub div a p {
+        margin-top: 15px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 12px;
+        font-family: 'Kalpurush', sans-serif;
+    }
+
+
+
+
+
+    /*  */
+    .main .bigimage {
+        margin: 0 auto;
+    }
+
+    .slide-container {
+        position: relative;
+        margin: auto;
+    }
+
+    .myslide {
+        display: none;
+    }
+
+    .myslide img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 10px;
+        width: 10px;
+        margin: 0 2px;
+        background-color: #bbb;
+        display: inline-block;
+        border-radius: 50%;
+        transition: background-color .6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #57431f;
+    }
+
+
+    .fade {
+        animation: fade 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: 0.4;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+
+
+    /*  */
+    .footer {
+        display: flex;
+        background-color: #FA6638;
+        border-radius: 40px 40px 0px 0px;
+        overflow: hidden;
+    }
+
+
+    .footer div img {
+        margin: 30px 0px 0px 30px;
+        width: 40px;
+    }
+
+    .footer .social {
+        margin-left: 40px;
+        line-height: 2.5;
+        color: white;
+        font-size: 30px;
+        display: flex;
+    }
+
+    .footer .social a {
+        color: rgb(255, 255, 255);
+        margin: 5px;
+    }
+
+    .footer .social i {
+        transition: transform .5s ease;
+    }
+
+    .footer .social i:hover {
+        color: blue;
+        transform: translateY(-5px);
+    }
+
+    .gototop {
+        opacity: 0;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 9999999999;
+        transition: opacity .5s linear;
+    }
+
+
+    .gototop i {
+        font-size: 30px;
+        color: #493819;
+    }
+}
+
